@@ -1,0 +1,21 @@
+{
+  "name": "playwright-portfolio-demo",
+  "version": "1.0.0",
+  "description": "Playwright login automation & data extraction portfolio demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:ui": "npx playwright test --ui",
+    "test:auth": "npx playwright test tests/auth/",
+    "test:scrape": "npx playwright test tests/scraping/",
+    "test:checkout": "npx playwright test tests/checkout/",
+    "report": "npx playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.0",
+    "dotenv": "^16.4.0"
+  },
+  "keywords": ["playwright", "automation", "testing", "scraping", "portfolio"]
+}
